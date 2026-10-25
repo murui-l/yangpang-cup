@@ -1,0 +1,4 @@
+interface:
+  display_name: "QQ飞车战报制作"
+  short_description: "使用本地地图素材，把比分表制作成含队标和逐局得分的高清竞速战报"
+  default_prompt: "使用 $qqspeed-battle-report，根据我的比分表制作QQ飞车手游战报，地图从E盘本地图库读取。"

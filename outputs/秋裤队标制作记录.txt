@@ -1,0 +1,5 @@
+编辑工具：内置imagegen，透明背景。
+队标文件：C:/Users/lin12/Documents/Codex/2026-10-22/qq/outputs/不知豆队_秋裤透明队标.png
+已替换到战报v3；全部36个分数及总分通过复核。
+最终提示词：
+Use case: precise-object-edit. Edit target: the supplied transparent cartoon character. Change only its lower-body clothing: replace its green patterned shorts with recognizable Chinese 秋裤, full-length close-fitting thermal long john pants, sage-green soft cotton with a ribbed elastic waistband and ribbed ankle cuffs, a subtle center seam. Two separate full-length trouser legs cover the legs down to the ankles, leaving the small yellow feet visible. Keep the character's same yellow-orange identity, oversized head, tilted stance, facial expression, eyes, ears, tuft, arms, upper body, proportions and 3D shading. The long johns should look cozy and humorous on this exact mascot, not like shorts. Keep the whole character inside the canvas and preserve a genuinely transparent background. No scenery, text, badge or extra objects.

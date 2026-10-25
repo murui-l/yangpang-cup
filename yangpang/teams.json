@@ -1,0 +1,54 @@
+{
+  "event": "杨胖杯",
+  "updated": "2026-10-25",
+  "teams": [
+    {
+      "name": "波喵",
+      "players": [
+        "沐瑞",
+        "喵帕斯"
+      ],
+      "logo": "qqspeed-battle-report/assets/bomiao-logo.png"
+    },
+    {
+      "name": "寒岛",
+      "players": [
+        "张寒",
+        "岛"
+      ],
+      "logo": "qqspeed-battle-report/assets/handao-logo.png"
+    },
+    {
+      "name": "不知豆队",
+      "players": [
+        "陈莫宇",
+        "清梦"
+      ],
+      "logo": "qqspeed-battle-report/assets/buzhidou-logo.png"
+    },
+    {
+      "name": "虾头路障",
+      "players": [
+        "大🦐",
+        "泪"
+      ],
+      "logo": "qqspeed-battle-report/assets/xiatou-luzhang-logo.png"
+    },
+    {
+      "name": "宇宙胖猴",
+      "players": [
+        "暗号",
+        "大胖子"
+      ],
+      "logo": "qqspeed-battle-report/assets/yuzhou-panghou-logo.png"
+    },
+    {
+      "name": "爱康tv",
+      "players": [
+        "郑文康",
+        "小爱莉"
+      ],
+      "logo": "qqspeed-battle-report/assets/aikang-tv-logo.png"
+    }
+  ]
+}

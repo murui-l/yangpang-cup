@@ -1,0 +1,23 @@
+# Temporary authoring files and unrelated 帕斯杯 posters stay local.
+/work/
+/outputs/*
+!/outputs/杨胖杯_队标/
+!/outputs/杨胖杯_2v均分榜_白鸽天行体.png
+!/outputs/杨胖杯_2v均分榜_白鸽天行体.jpg
+!/outputs/波喵VS寒岛_九局战报_4K.png
+!/outputs/波喵VS寒岛_九局战报_4K.jpg
+!/outputs/不知豆队VS虾头路障_九局战报_4K-v3.png
+!/outputs/不知豆队VS虾头路障_九局战报_4K-v3.jpg
+!/outputs/素材来源与制作说明.txt
+!/outputs/不知豆队VS虾头路障_制作说明.txt
+!/outputs/秋裤队标制作记录.txt
+!/outputs/均分榜制作记录.txt
+node_modules/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+/yangpang/average-ranking/ranking.html
+/yangpang/average-ranking/validation.json
+/yangpang/rendered/

@@ -1,0 +1,29 @@
+{
+  "event": "杨胖杯",
+  "updated": "2026-10-25",
+  "scope": "本对话后续内容按杨胖杯处理；不追改此前帕斯杯的数据图。",
+  "teams": [
+    {
+      "name": "宇宙胖猴",
+      "players": [
+        "暗号",
+        "大胖子"
+      ],
+      "logo": "宇宙胖猴_透明队标.png"
+    },
+    {
+      "name": "爱康tv",
+      "players": [
+        "郑文康",
+        "小爱莉"
+      ],
+      "logo": "爱康tv_透明队标.png"
+    }
+  ],
+  "mode": "内置 imagegen",
+  "prompts": {
+    "宇宙胖猴": "Use case: logo-brand. Create a polished square esports team emblem for the exact Chinese team name 宇宙胖猴. Primary mascot: an original cute chunky round-bellied monkey astronaut, cheeky confident grin, big round ears, warm brown fur and cream muzzle, dressed in a clean ivory space suit with violet and cyan accents, one complete compact waist-up silhouette. A large stylized tilted planetary orbital ring sweeps around the monkey, a few small crisp stars, and a subtle shield-like cosmic purple inner badge make the name 'cosmic chubby monkey' immediately legible. Strong distinctive shape, charming rather than aggressive, premium clean vector-like cel-shaded illustration with thick navy outline, controlled highlights, highly readable at small scoreboard size. At the lower edge of the badge incorporate the exact four Chinese characters '宇宙胖猴' as a bold clean white title with purple/navy outline. No extra English, no roster names, no event names. Centered full emblem with comfortable margin; no cropped ears or orbital ring. Transparent outside the emblem, genuine alpha channel, no square background, no mockup, no watermark.",
+    "爱康tv": "Use case: logo-brand / identity-preserve. Create a polished square esports team emblem for exact team name '爱康tv'. Input image 1 is the CHARACTER IDENTITY REFERENCE: preserve this specific cute chibi anime girl's short cream-white bob fading to dark lavender at the ends, purple sleepy eyes, straight bangs, small gold side hairclip, dark flower hair ornament, pale skin, cream blouse and dark purple bow, understated confident pout and soft blush. Input image 2 is ONLY THE HAND POSE REFERENCE: reproduce the player's unmistakable two-handed C-BLOCK / ZmjjKK '以下范上' pose accurately on the girl. Her hands meet and cross in front of her upper chest below the face: her LEFT hand (viewer right) holds its INDEX AND MIDDLE fingers tightly together straight UP, palm faces viewer, ring and pinky curled; her RIGHT hand (viewer left) holds INDEX AND MIDDLE fingers together pointing DOWN with back of hand toward viewer, remaining fingers folded; thumbs hook/cross close to center. Exactly two hands with natural five-finger anatomy, one paired set of fingers pointing up and the other paired set pointing down, no peace/V signs, no middle-finger gesture, no extra hands. Frame a complete waist-up character, hands clearly visible and sufficiently large, face unobstructed. Crisp premium anime mascot emblem illustration, clean dark violet outline, tasteful lilac / cream / pale gold color scheme, compact small TV-screen-like violet badge shape behind the mascot as a subtle nod to tv. At the bottom below the hands, a neat integrated banner with exact readable text '爱康tv' using lowercase t and v, no other writing. Transparent outside the cutout emblem, genuine alpha, no square background, no watermark. Do not transfer any real person's face, clothing, stats, name, MVP or typography from reference 2; it is solely a pose guide. Keep the character recognizable as image 1, do not turn her into a generic different anime mascot."
+  },
+  "gesture_reference": "https://i.ifeng.com/c/8qO4oFtsQhH"
+}

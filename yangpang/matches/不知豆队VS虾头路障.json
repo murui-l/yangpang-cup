@@ -1,0 +1,95 @@
+{
+  "title": "2v2个人竞速",
+  "subtitle": "九局战报",
+  "teams": [
+    {
+      "name": "不知豆队",
+      "logo": "../qqspeed-battle-report/assets/buzhidou-logo.png",
+      "total": 139,
+      "players": [
+        {
+          "name": "陈莫宇",
+          "source_name": "陈",
+          "total": 95,
+          "scores": [
+            11,
+            11,
+            11,
+            9,
+            11,
+            10,
+            11,
+            11,
+            10
+          ]
+        },
+        {
+          "name": "清梦",
+          "source_name": "梦",
+          "total": 44,
+          "scores": [
+            6,
+            9,
+            3,
+            0,
+            5,
+            8,
+            5,
+            7,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "name": "虾头路障",
+      "logo": "../qqspeed-battle-report/assets/xiatou-luzhang-logo.png",
+      "total": 146,
+      "players": [
+        {
+          "name": "大🦐",
+          "source_name": "虾",
+          "total": 82,
+          "scores": [
+            9,
+            6,
+            5,
+            11,
+            10,
+            11,
+            10,
+            9,
+            11
+          ]
+        },
+        {
+          "name": "泪",
+          "source_name": "障",
+          "total": 64,
+          "scores": [
+            7,
+            9,
+            5,
+            4,
+            8,
+            9,
+            8,
+            9,
+            5
+          ]
+        }
+      ]
+    }
+  ],
+  "rounds": [
+    "亚特兰蒂斯",
+    "疾风机场",
+    "流觞曲水",
+    "山海画境",
+    "秋名山",
+    "踏雪寻春",
+    "云涌天门",
+    "夜游潇湘",
+    "亚特兰蒂斯"
+  ]
+}

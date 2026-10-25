@@ -1,0 +1,37 @@
+波喵 VS 寒岛｜九局战报
+
+交付：3840 × 2160 像素 PNG、JPG。
+分数依据：用户提供的第二张照片。36项逐局分数、4项个人总分、2项队伍总分已经逐项核对。
+字体与分数使用固定数据排版；两枚队标使用内置 imagegen 工具绘制。赛道背景采用网络发布的原有游戏美术素材进行版面裁切，未使用生成模型重绘赛道。
+
+赛道素材来源
+1. 端午竞渡：赛道图鉴转载的场景美术图，第2张。
+   https://wiki.biligame.com/qqspeed/端午竞渡
+   https://patchwiki.biligame.com/images/qqspeed/a/a1/h3nnxslixwq7jg7ixcfbek3j21gz3fl.png
+2. 雾山五行：官方公告《全新联动赛道雾山五行设计理念公开！》，取“神隐雾山段”场景图。
+   https://bbs.4399.cn/thread-view-tid-45681191
+   https://fs.img4399.com/bbs/202407/23/2024002699118/58sjCMJGiR.750x5902.jpg~740x0
+3. 心渊：官方更新公告转载《更新公告丨全新赛道「序列中枢」&「心渊」明日上线，新版本福利同步报道！》，取心渊冥想室场景。
+   https://news.17173.com/content/11202025/164453142.shtml
+   https://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/AUMktbbtkqhacCu.jpg
+4. 决战！雪山之巅：赛道图鉴转载的场景美术图，第5张。
+   https://wiki.biligame.com/qqspeed/决战！雪山之巅
+   https://patchwiki.biligame.com/images/qqspeed/3/38/bd1no3je1eo0hm794in23v2rlveu4by.jpg
+5. 秋名山：标明“来源：官方”的赛道攻略，取首张场景缩略图。
+   https://news.17173.com/z/qqfcsy/content/03212018/213829268.shtml
+   https://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/eQzdRnbmjemteuy.jpg
+6. 伊甸掠影：赛道图鉴转载的场景美术图，第1张；与官方更新公告的场景对应。
+   https://wiki.biligame.com/qqspeed/伊甸掠影
+   https://patchwiki.biligame.com/images/qqspeed/d/d5/n7hvsb3o4wtlfdngbtio1eevjszr1vj.png
+   官方公告：https://bbs.4399.cn/thread-view-tid-42288417
+7. 流觞曲水：小橘子发布的《新版本爆料② | 全新赛道雪地嘉年华&流觞曲水将于12月26日正式上线！》，取流觞曲水起点美术图。
+   https://www.taptap.cn/moment/485586502978374892?group_id=41517
+   https://img2-tc.tapimg.com/moment/etag/9bcb3bd4acb7a2928f5f7a999aca9778.png/_tap_ugc.jpg
+
+队标最终提示词（内置 imagegen；两次独立生成；transparent_background=true）
+
+波喵：
+Use case: logo-brand. Create ONE polished professional esports team emblem, isolated on fully transparent background. Subject: Garfield the orange comic cat, recognizable lazy half-closed eyes, black stripes, broad orange face, cream muzzle, smug confident slight smile. Chest-up mascot, one chunky compact symmetric shield silhouette, bold clean dark purple outlines, orange and champagne gold accent border, tasteful dimensional vector-like rendering, legible at small size. 1024x1024 square. No text, letters, numerals, watermark, floor, scene, or extraneous objects. Emblem occupies 85% of canvas with safe transparent padding. This is a gaming scoreboard team logo.
+
+寒岛：
+Use case: logo-brand. Create ONE polished professional esports team emblem, isolated on fully transparent background. Subject: a rugged small island with three angular icy mountain peaks, snowcaps, blue glacier cliffs and a little stylized icy ocean wave below, cold sea mist contained within badge. ONE chunky compact symmetric shield silhouette, bold clean dark purple outlines, ice blue, white and silver accent border, tasteful dimensional vector-like rendering, legible at small size. 1024x1024 square. No national outline or flags. No text, letters, numerals, watermark, floor, scene, or extraneous objects. Emblem occupies 85% of canvas with safe transparent padding. This is a gaming scoreboard team logo.

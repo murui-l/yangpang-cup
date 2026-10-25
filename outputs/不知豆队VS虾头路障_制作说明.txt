@@ -1,0 +1,22 @@
+不知豆队 VS 虾头路障｜九局战报
+
+成图尺寸：3840×2160；PNG与JPG。
+队伍总分：不知豆队139，虾头路障146。
+个人总分：陈莫宇95，清梦44，大🦐82，泪64。
+所有36个逐局分数及9局累计分已逐项核验。清梦第4局为+0。
+
+地图顺序：亚特兰蒂斯、疾风机场、流觞曲水、山海画境、秋名山、踏雪寻春、云涌天门、夜游潇湘、亚特兰蒂斯。
+地图均从E:/qq飞车地图读取，来源见该图库catalog.json。图库保留官方宣传转载与游戏场景图转载的实际出处。
+
+不知豆队队标：用户提供的306f7ffa351d35d979b527ceedf5011b.jpg实际为14帧GIF，提取第1帧，保留原图角色。
+工作区文件：C:/Users/lin12/Documents/Codex/2026-10-22/qq/work/match-buzhidou/buzhidou-frame.png
+虾头路障队标：内置imagegen生成，保留透明通道。
+工作区文件：C:/Users/lin12/Documents/Codex/2026-10-22/qq/work/match-buzhidou/shrimp-cone.png
+
+最终生成提示词（内置工具，非CLI）：
+Use case: logo-brand
+Asset type: transparent esports team emblem for a QQ Speed Mobile match report.
+Primary request: one large orange-red shrimp/prawn wearing the iconic battered orange traffic cone hat worn by the Conehead Zombie from Plants vs. Zombies (路障僵尸), with a pale horizontal stripe. The shrimp itself is the mascot; no zombie character. Make the shrimp recognizable with curled segmented body, antennae, eyes and tail, cheeky competitive expression.
+Style: polished illustrated esports badge, bold dark purple outlines, crisp shapes, orange and champagne-gold accents, compact shield composition readable at small size.
+Composition: centered full emblem, square canvas, generous transparent margin, all antennae and cone within frame.
+Constraints: genuinely transparent background; no text, letters, watermark or extra characters.

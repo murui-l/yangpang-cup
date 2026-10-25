@@ -1,0 +1,8 @@
+图片尺寸：2160×2880，PNG及JPG。
+按2v均分降序，张寒与乐乐并列第3。总均分575÷72＝7.99。
+空白成绩保留为暂无数据，不按0计入。
+使用本次表格名字，不沿用此前战报昵称。
+背景：从图二顶部提取参考，经内置imagegen清理并适配为紫金竖版背景；数据使用固定文字排版。
+背景工作区文件：C:/Users/lin12/Documents/Codex/2026-10-22/qq/work/average-ranking/background.png
+最终背景编辑提示词：
+Use case: precise-object-edit. Edit target: supplied QQ Speed purple-and-gold tournament poster crop. Turn this into a CLEAN BACKGROUND for a new statistics leaderboard, portrait 3:4. Retain and adapt the original luminous silver-champagne trophy, star, checkered flags and sweeping lavender/gold ribbons as a compact ornament at the very top center (upper 17 percent). Preserve its purple-gold color scheme and refined esports visual style. Remove ALL words, Chinese text, dates, game and team logos, old scores, panels and screenshots. Leave the middle and lower 75 percent calm deep violet with subtle purple geometric rays for later accurate table typesetting, gently darker behind text. Thin champagne-gold outer corner accents, soft lavender and gold reflections at bottom corners. The original background is the visual source; no players or new objects. No text, numbers, watermark, labels or symbols that look like writing. Opaque artwork, no mockup. Output 3:4 portrait.

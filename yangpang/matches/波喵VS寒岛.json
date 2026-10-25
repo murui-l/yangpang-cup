@@ -1,0 +1,93 @@
+{
+  "title": "2v2个人竞速",
+  "subtitle": "九局战报",
+  "teams": [
+    {
+      "name": "波喵",
+      "logo": "../qqspeed-battle-report/assets/bomiao-logo.png",
+      "total": 146,
+      "players": [
+        {
+          "name": "沐瑞",
+          "source_name": "林波",
+          "scores": [
+            11,
+            11,
+            11,
+            8,
+            10,
+            8,
+            11,
+            11,
+            9
+          ],
+          "total": 90
+        },
+        {
+          "name": "喵帕斯",
+          "source_name": "mps",
+          "scores": [
+            5,
+            6,
+            9,
+            8,
+            8,
+            7,
+            0,
+            6,
+            7
+          ],
+          "total": 56
+        }
+      ]
+    },
+    {
+      "name": "寒岛",
+      "logo": "../qqspeed-battle-report/assets/handao-logo.png",
+      "total": 144,
+      "players": [
+        {
+          "name": "张寒",
+          "scores": [
+            9,
+            10,
+            6,
+            11,
+            11,
+            11,
+            7,
+            6,
+            11
+          ],
+          "total": 82
+        },
+        {
+          "name": "岛",
+          "scores": [
+            6,
+            9,
+            7,
+            8,
+            8,
+            9,
+            2,
+            8,
+            5
+          ],
+          "total": 62
+        }
+      ]
+    }
+  ],
+  "rounds": [
+    "端午竞渡",
+    "雾山五行",
+    "心渊",
+    "决战！雪山之巅",
+    "秋名山",
+    "伊甸掠影",
+    "流觞曲水",
+    "端午竞渡",
+    "决战！雪山之巅"
+  ]
+}
