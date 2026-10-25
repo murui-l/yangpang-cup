@@ -2,24 +2,16 @@ const fs=require('fs'),path=require('path');
 const {pathToFileURL}=require('url');
 const {chromium}=require(process.env.QQSPEED_NODE_MODULES?path.join(process.env.QQSPEED_NODE_MODULES,'playwright'):'playwright');
 const dir=__dirname,out=path.resolve(dir,'../../outputs');
-const source=[
- {name:'陈莫宇',average:10.56,rate:66.67,total:95,games:9},
- {name:'清梦',average:4.89,rate:0,total:44,games:9},
- {name:'张寒',average:9.11,rate:44.44,total:82,games:9},
- {name:'小岛',average:6.89,rate:0,total:62,games:9},
- {name:'乐乐',average:9.11,rate:33.33,total:82,games:9},
- {name:'路障',average:7.11,rate:0,total:64,games:9},
- {name:'林敏波',average:10,rate:55.56,total:90,games:9},
- {name:'牢喵',average:6.22,rate:0,total:56,games:9}
-];
-const pending=['郑文康','爱丽','大胖','猴神'];
-for(const p of source)if(Number((p.total/p.games).toFixed(2))!==p.average)throw Error(p.name+'均分不一致');
+const input=JSON.parse(fs.readFileSync(path.join(dir,'ranking-data.json'),'utf8').replace(/^\uFEFF/,''));
+const source=input.rows,pending=input.pending||[];
+if(!Array.isArray(source)||!source.length||source.length>8)throw Error('当前均分榜模板支持1–8名选手，更多行请先调整版式');
+for(const p of source){if(typeof p.name!=='string'||!p.name.trim()||!Number.isFinite(p.total)||!Number.isFinite(p.games)||p.games<=0||!Number.isFinite(p.average)||!Number.isFinite(p.rate)||p.rate<0||p.rate>100)throw Error('选手数据缺项或格式错误');if(Number((p.total/p.games).toFixed(2))!==p.average)throw Error(p.name+'均分不一致');}
 const overall=(source.reduce((s,p)=>s+p.total,0)/source.reduce((s,p)=>s+p.games,0)).toFixed(2);
-if(overall!=='7.99')throw Error('总均分不一致');
+if(input.overall!==undefined&&Number(input.overall)!==Number(overall))throw Error('总均分不一致');
 const rows=source.slice().sort((a,b)=>b.average-a.average);
 rows.forEach((p,i)=>p.rank=i&&p.average===rows[i-1].average?rows[i-1].rank:i+1);
 if(!fs.existsSync(path.join(dir,'background.png')))throw Error('缺少已归档的 background.png');
-fs.writeFileSync(path.join(dir,'ranking-data.json'),JSON.stringify({rows,pending,overall},null,2));
+// Read scores from the JSON source; rendering never rewrites it.
 const bg='data:image/png;base64,'+fs.readFileSync(path.join(dir,'background.png')).toString('base64');
 const chineseFont='data:font/ttf;base64,'+fs.readFileSync(path.join(dir,'fonts/字魂白鸽天行体(商用需授权).ttf')).toString('base64');
 const html=`<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><style>
@@ -49,16 +41,17 @@ h1{position:absolute;top:961px;width:100%;margin:0;text-align:center;font-size:1
 <section class="pending"><div class="pending-label">暂无数据 · 暂不排名</div><div class="pending-names">${pending.map(n=>`<span class="pending-name">${n}</span>`).join('')}</div></section><div class="foot">均分＝2v总分 ÷ 2v场次 · 数值保留两位小数<br>数据按所提供表格整理</div></main></body></html>`;
 fs.writeFileSync(path.join(dir,'ranking.html'),html);
 async function main(){
- const browser=await chromium.launch({headless:true,executablePath:process.env.QQSPEED_BROWSER||'C:/Program Files/Google/Chrome/Application/chrome.exe',args:['--disable-gpu']});
+ const browser=await chromium.launch({headless:true,executablePath:require('../qqspeed-battle-report/scripts/runtime.cjs').browserPath(),args:['--disable-gpu']});
  try{
   const page=await browser.newPage({viewport:{width:2160,height:2880},deviceScaleFactor:1});await page.goto(pathToFileURL(path.join(dir,'ranking.html')).href);await page.evaluate(()=>document.fonts.ready);
   await page.evaluate(async()=>{const b=getComputedStyle(document.querySelector('.poster')).backgroundImage;const i=new Image();i.src=b.slice(5,-2);await i.decode()});
   const check=await page.evaluate(()=>({rows:[...document.querySelectorAll('.row')].map(e=>[...e.children].map(s=>s.textContent)),overflow:[...document.querySelectorAll('.grid > span,.pending-name,.pending-label')].filter(e=>e.scrollWidth>e.clientWidth).map(e=>e.textContent)}));
-  if(check.rows.length!==8||check.overflow.length)throw Error(JSON.stringify(check));
+  if(check.rows.length!==source.length||check.overflow.length)throw Error(JSON.stringify(check));
   rows.forEach((p,i)=>{const expected=[String(p.rank),p.name,p.average.toFixed(2),p.rate.toFixed(2)+'%',String(p.total),String(p.games)];if(JSON.stringify(check.rows[i])!==JSON.stringify(expected))throw Error('排版值不一致')});
   const revision=await page.evaluate(()=>({event:document.querySelector('.top-line').textContent,removed:!document.body.innerText.includes('参榜选手')&&!document.body.innerText.includes('每人场次'),font:document.fonts.check('800 50px ReportChinese')}));
   if(!revision.event.includes('杨胖杯')||!revision.removed||!revision.font)throw Error('改版检查失败：'+JSON.stringify(revision));
-  for(const format of ['png','jpeg'])await page.screenshot({path:path.join(out,'杨胖杯_2v均分榜_白鸽天行体_重制-'+Date.now()+'.'+(format==='png'?'png':'jpg')),type:format,...(format==='jpeg'?{quality:95}:{})});
+  const stamp=Date.now();
+  for(const format of ['png','jpeg'])await page.screenshot({path:path.join(out,'杨胖杯_2v均分榜_白鸽天行体_重制-'+stamp+'.'+(format==='png'?'png':'jpg')),type:format,...(format==='jpeg'?{quality:95}:{})});
   fs.writeFileSync(path.join(dir,'validation.json'),JSON.stringify({ok:true,overall,rows:check.rows,overflow:check.overflow},null,2));console.log(JSON.stringify({ok:true,overall,ranking:rows.map(p=>({rank:p.rank,name:p.name,average:p.average}))},null,2));
  }finally{await browser.close()}
 }

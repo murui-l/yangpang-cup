@@ -1,5 +1,6 @@
 const fs=require('fs'),path=require('path'),crypto=require('crypto');
-const DEFAULT_LIBRARY='E:/qq飞车地图';
+const PROJECT_LIBRARY=path.resolve(__dirname,'../../../maps');
+const DEFAULT_LIBRARY=fs.existsSync(path.join(PROJECT_LIBRARY,'catalog.json'))?PROJECT_LIBRARY:'E:/qq飞车地图';
 const normalize=s=>String(s).normalize('NFKC').toLowerCase().replace(/[\s!！·.。_—–-]/g,'');
 function inside(root,rel){const p=path.resolve(root,rel);if(!p.startsWith(path.resolve(root)+path.sep))throw Error('图库路径越界: '+rel);return p;}
 function loadCatalog(root=DEFAULT_LIBRARY){const file=path.join(root,'catalog.json');if(!fs.existsSync(file))throw Error('本地图库索引不存在: '+file);const cat=JSON.parse(fs.readFileSync(file,'utf8').replace(/^\uFEFF/,''));if(!Array.isArray(cat.maps))throw Error('catalog.json 缺少 maps 数组');return cat;}

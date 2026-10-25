@@ -1,34 +1,118 @@
-# 杨胖杯制作资料
+<div align="center">
 
-保存杨胖杯已完成成图、六支队伍的当前队标、比分配置和制作源文件。交付图片在 `outputs/`，可复用资料在 `yangpang/`。
+# 杨胖杯 · QQ飞车手游赛事图鉴
 
-## 已完成内容
+**战报设计 · 选手均分榜 · 队伍视觉 · 制作方法**
 
-- 波喵 VS 寒岛：九局战报，146 : 144。
-- 不知豆队 VS 虾头路障：九局战报，139 : 146，左队使用秋裤透明队标，当前成图为 v3。
-- 杨胖杯 2v 均分榜：白鸽天行体版本，使用“小岛”，总均分 7.99。
-- 宇宙胖猴：暗号、大胖子；宇航员胖猴、行星环队标。
-- 爱康tv：郑文康、小爱莉；用户指定动漫人物及 ZmjjKK 上下交错手势队标。
+面向赛事组织者、飞车玩家和海报制作者的参考项目。成图直接展示，数据、模板与素材一并提供，方便查看设计，也方便换成自己的比赛数据。
 
-## 目录
+[看战报](#战报展示) · [看均分榜](#选手均分榜) · [看队标](#六支队伍与队标) · [动手制作](docs/制作指南.md) · [赛道图库](docs/赛道图库.md)
 
-- `outputs/`：当前版本的 PNG、JPG 和制作记录。
-- `outputs/杨胖杯_队标/`：两张新增透明队标、阵容和完整生成提示词。
-- `yangpang/teams.json`：当前六队登记，后续以用户最新阵容为准。
-- `yangpang/matches/`：两场九局比分，保留各场当时显示名。
-- `yangpang/average-ranking/`：均分榜渲染脚本、固定数据、背景及用户提供字体。
-- `yangpang/qqspeed-battle-report/`：现有战报技能的项目快照，含六枚当前队标、模板及渲染脚本。
+</div>
 
-## 数据范围
+## 战报展示
 
-用户已确认此前以“赛程总览，总比分情况”制作的六张数据图属于**帕斯杯**，包括早期误用杨胖杯文件名的深蓝银白版。因此 `work/yangpang-data/`、六张数据图、预览和压缩包均不纳入本仓库。原文件保留在工作区。
+### 波喵 VS 寒岛 · 146 : 144
 
-历史比赛与均分榜的选手显示名按当时输入保存；不把新队伍阵容反向覆盖到旧成绩。
+深紫底色配香槟金比分，上方集中呈现队伍与选手总分，下方按九局顺序排列赛道竖卡。真实游戏场景叠加暗色蒙层，保证分数清晰。
 
-## 本地重制
+[![波喵对寒岛九局战报，最终比分146比144](outputs/波喵VS寒岛_九局战报_4K.jpg)](outputs/波喵VS寒岛_九局战报_4K.png)
 
-战报使用 Node.js、Playwright、Sharp 和 Chrome/Edge。地图库仍在 `E:/qq飞车地图`，其 45 张地图是共享素材，未重复打包入仓库。运行方法见 `yangpang/qqspeed-battle-report/references/workflow.md`；配置中的队标路径已改为仓库相对路径。
+**波喵**：沐瑞、喵帕斯　｜　**寒岛**：张寒、岛
 
-均分榜运行 `node yangpang/average-ranking/build-ranking.cjs`。依赖可由本地安装或 `QQSPEED_NODE_MODULES` 指定；浏览器可通过 `QQSPEED_BROWSER` 指定。已保存背景优先使用，输出会采用新文件名，保护当前成图。
+[高清 PNG](outputs/波喵VS寒岛_九局战报_4K.png) · [发送版 JPG](outputs/波喵VS寒岛_九局战报_4K.jpg) · [本场数据 JSON](yangpang/matches/波喵VS寒岛.json)
 
-生成队标使用内置 imagegen；最终提示词见 `outputs/杨胖杯_队标/队伍登记与设计记录.json`，其他素材出处见各制作记录。
+### 不知豆队 VS 虾头路障 · 139 : 146
+
+复用同一套版式，替换阵容、队标、赛道与每局分数。不知豆队使用绿色秋裤人物队标；第四局的零分明确显示为「+0」。
+
+[![不知豆队对虾头路障九局战报，最终比分139比146](outputs/不知豆队VS虾头路障_九局战报_4K-v3.jpg)](outputs/不知豆队VS虾头路障_九局战报_4K-v3.png)
+
+**不知豆队**：陈莫宇、清梦　｜　**虾头路障**：大🦐、泪
+
+[高清 PNG](outputs/不知豆队VS虾头路障_九局战报_4K-v3.png) · [发送版 JPG](outputs/不知豆队VS虾头路障_九局战报_4K-v3.jpg) · [本场数据 JSON](yangpang/matches/不知豆队VS虾头路障.json)
+
+两张战报尺寸均为 **3840 × 2160**。点击图片可打开高清原图。
+
+## 选手均分榜
+
+竖版以奖杯、旗帜与紫金光影衬托榜单。按均分降序排列，同分并列；总均分按总得分除以总场次计算，空白成绩放入待排名区。
+
+<div align="center">
+  <a href="outputs/杨胖杯_2v均分榜_白鸽天行体.png"><img src="outputs/杨胖杯_2v均分榜_白鸽天行体.jpg" width="540" alt="杨胖杯2v2选手均分榜，总均分7.99，白鸽天行体版本"></a>
+</div>
+
+**2160 × 2880** · 字魂白鸽天行体 · 总均分 **7.99**
+
+[高清 PNG](outputs/杨胖杯_2v均分榜_白鸽天行体.png) · [发送版 JPG](outputs/杨胖杯_2v均分榜_白鸽天行体.jpg) · [榜单数据](yangpang/average-ranking/ranking-data.json) · [排版脚本](yangpang/average-ranking/build-ranking.cjs)
+
+这是一份已完成比赛的成绩快照，历史显示名按该张榜单保留；队伍登记和每场战报的数据分别维护。
+
+## 六支队伍与队标
+
+六枚队标均为透明背景 PNG，可以放进战报、赛程图或对阵海报。点击队标查看原图。
+
+<table>
+  <tr>
+    <td align="center" width="33%"><a href="yangpang/qqspeed-battle-report/assets/bomiao-logo.png"><img src="yangpang/qqspeed-battle-report/assets/bomiao-logo.png" width="230" alt="波喵队标，橙色加菲猫"></a><br><b>波喵</b><br>沐瑞 · 喵帕斯<br><sub>橙色加菲猫徽章</sub></td>
+    <td align="center" width="33%"><a href="yangpang/qqspeed-battle-report/assets/handao-logo.png"><img src="yangpang/qqspeed-battle-report/assets/handao-logo.png" width="230" alt="寒岛队标，冰雪岛屿"></a><br><b>寒岛</b><br>张寒 · 岛<br><sub>冰蓝色岛屿与雪峰</sub></td>
+    <td align="center" width="33%"><a href="yangpang/qqspeed-battle-report/assets/buzhidou-logo.png"><img src="yangpang/qqspeed-battle-report/assets/buzhidou-logo.png" width="230" alt="不知豆队队标，穿绿色秋裤的黄色人物"></a><br><b>不知豆队</b><br>陈莫宇 · 清梦<br><sub>黄色人物与绿色秋裤</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="yangpang/qqspeed-battle-report/assets/xiatou-luzhang-logo.png"><img src="yangpang/qqspeed-battle-report/assets/xiatou-luzhang-logo.png" width="230" alt="虾头路障队标，戴路障锥帽的大虾"></a><br><b>虾头路障</b><br>大🦐 · 泪<br><sub>大虾与路障锥帽</sub></td>
+    <td align="center"><a href="yangpang/qqspeed-battle-report/assets/yuzhou-panghou-logo.png"><img src="yangpang/qqspeed-battle-report/assets/yuzhou-panghou-logo.png" width="230" alt="宇宙胖猴队标，胖猴宇航员与行星环"></a><br><b>宇宙胖猴</b><br>暗号 · 大胖子<br><sub>胖猴宇航员与行星环</sub></td>
+    <td align="center"><a href="yangpang/qqspeed-battle-report/assets/aikang-tv-logo.png"><img src="yangpang/qqspeed-battle-report/assets/aikang-tv-logo.png" width="230" alt="爱康tv队标，白紫短发动漫人物比出上下交错手势"></a><br><b>爱康tv</b><br>郑文康 · 小爱莉<br><sub>动漫人物与上下交错手势</sub></td>
+  </tr>
+</table>
+
+[队伍登记 JSON](yangpang/teams.json) · [队标说明](yangpang/qqspeed-battle-report/references/team-logos.md) · [新增队标的完整提示词](outputs/杨胖杯_队标/队伍登记与设计记录.json)
+
+## 怎样制作自己的战报
+
+1. 准备两队各两名选手的逐局分数和地图顺序。
+2. 复制示例 JSON，替换队名、选手、透明队标路径和每局得分。
+3. 运行渲染器，检查全部逐局分数与总分，再导出 PNG 和 JPG。
+
+```bash
+git clone https://github.com/murui-l/yangpang-cup.git
+cd yangpang-cup
+npm install
+npx playwright install chromium
+
+npm run report -- --config "yangpang/matches/波喵VS寒岛.json" --out-dir outputs --work-dir work/demo
+```
+
+仓库已附两场示例使用的 **13 张地图原图、缩略图及来源索引**，克隆后可以直接重制示例。地图使用和新增方法见 [赛道图库](docs/赛道图库.md)。
+
+均分榜可运行 `npm run ranking`。完整参数、数据格式、字体调整及常见问题见 [制作指南](docs/制作指南.md)。
+
+## 设计与数据处理方法
+
+| 环节 | 做法 |
+|---|---|
+| 版面 | 固定 HTML/CSS 排版，比分和姓名由 JSON 注入 |
+| 队标 | 根据队名或人物参考制作，导出透明 PNG |
+| 赛道 | 按地图名称读取真实场景，重复地图复用同一素材 |
+| 校验 | 逐局累加个人分数、再汇总队分；检查缺图、漏局与文字溢出 |
+| 输出 | 战报 3840×2160；均分榜 2160×2880；每张同时导出 PNG/JPG |
+
+图像生成用于队标和装饰背景；准确的文字与分数通过排版脚本绘制。这种分工方便核对数据，也便于替换选手和比分后反复制作。
+
+## 文件导航
+
+```text
+outputs/                         成图与设计记录
+maps/                            示例赛道图、缩略图和来源索引
+docs/                            面向读者的制作指南与赛道图库
+yangpang/
+  teams.json                     六支队伍登记
+  matches/                       两场比赛的原始比分配置
+  average-ranking/               均分榜脚本、数据、背景与字体
+  qqspeed-battle-report/          战报模板、渲染器、队标与技能参考
+```
+
+## 素材与使用说明
+
+本项目供赛事视觉和数据排版学习参考。赛道的实际出处记录在 [maps/catalog.json](maps/catalog.json)，队标和背景的制作过程记录在 `outputs/` 的说明文件中。游戏场景、角色参考与字体分别保留各自权利，不因仓库公开而获得额外商用授权；所附白鸽天行体文件标注「商用需授权」。
+
+发现比分、显示名或素材对应问题，欢迎 [提交 Issue](https://github.com/murui-l/yangpang-cup/issues)，请附上具体场次或文件名。也欢迎分享自己的排版改进和战报效果。

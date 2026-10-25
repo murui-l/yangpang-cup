@@ -1,0 +1,15 @@
+{
+  "name": "yangpang-cup",
+  "version": "1.0.0",
+  "private": true,
+  "description": "杨胖杯 QQ飞车手游战报、均分榜与队标制作参考",
+  "scripts": {
+    "report": "node yangpang/qqspeed-battle-report/scripts/render-report.cjs",
+    "ranking": "node yangpang/average-ranking/build-ranking.cjs",
+    "maps:audit": "node yangpang/qqspeed-battle-report/scripts/library.cjs audit"
+  },
+  "dependencies": {
+    "playwright": "1.62.1",
+    "sharp": "0.35.5"
+  }
+}
