@@ -2,19 +2,30 @@
   "rows": [
     {
       "name": "陈莫宇",
-      "average": 10.56,
-      "rate": 66.67,
-      "total": 95,
-      "games": 9,
-      "rank": 1
+      "average": 10.69,
+      "rate": 75,
+      "total": 171,
+      "games": 16,
+      "rank": 1,
+      "first_place_count": 12
     },
     {
       "name": "林敏波",
       "average": 10,
-      "rate": 55.56,
-      "total": 90,
-      "games": 9,
-      "rank": 2
+      "rate": 62.5,
+      "total": 160,
+      "games": 16,
+      "rank": 2,
+      "first_place_count": 10
+    },
+    {
+      "name": "大胖子",
+      "total": 65,
+      "games": 7,
+      "first_place_count": 2,
+      "average": 9.29,
+      "rate": 28.57,
+      "rank": 3
     },
     {
       "name": "张寒",
@@ -22,7 +33,8 @@
       "rate": 44.44,
       "total": 82,
       "games": 9,
-      "rank": 3
+      "rank": 4,
+      "first_place_count": 4
     },
     {
       "name": "乐乐",
@@ -30,7 +42,17 @@
       "rate": 33.33,
       "total": 82,
       "games": 9,
-      "rank": 3
+      "rank": 4,
+      "first_place_count": 3
+    },
+    {
+      "name": "郑文康",
+      "total": 61,
+      "games": 7,
+      "first_place_count": 1,
+      "average": 8.71,
+      "rate": 14.29,
+      "rank": 6
     },
     {
       "name": "路障",
@@ -38,7 +60,8 @@
       "rate": 0,
       "total": 64,
       "games": 9,
-      "rank": 5
+      "rank": 7,
+      "first_place_count": 0
     },
     {
       "name": "小岛",
@@ -46,30 +69,51 @@
       "rate": 0,
       "total": 62,
       "games": 9,
-      "rank": 6
+      "rank": 8,
+      "first_place_count": 0
+    },
+    {
+      "name": "暗号",
+      "total": 48,
+      "games": 7,
+      "first_place_count": 0,
+      "average": 6.86,
+      "rate": 0,
+      "rank": 9
+    },
+    {
+      "name": "小爱莉",
+      "total": 37,
+      "games": 7,
+      "first_place_count": 0,
+      "average": 5.29,
+      "rate": 0,
+      "rank": 10
     },
     {
       "name": "牢喵",
-      "average": 6.22,
+      "average": 5,
       "rate": 0,
-      "total": 56,
-      "games": 9,
-      "rank": 7
+      "total": 80,
+      "games": 16,
+      "rank": 11,
+      "first_place_count": 0
     },
     {
       "name": "清梦",
-      "average": 4.89,
+      "average": 4.63,
       "rate": 0,
-      "total": 44,
-      "games": 9,
-      "rank": 8
+      "total": 74,
+      "games": 16,
+      "rank": 12,
+      "first_place_count": 0
     }
   ],
-  "pending": [
-    "郑文康",
-    "爱丽",
-    "大胖",
-    "猴神"
-  ],
-  "overall": "7.99"
+  "pending": [],
+  "overall": "7.70",
+  "updated": "2026-10-26",
+  "applied_matches": [
+    "2026-10-26_不知豆队VS爱康tv",
+    "2026-10-26_宇宙胖猴VS波喵"
+  ]
 }

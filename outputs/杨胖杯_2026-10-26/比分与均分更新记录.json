@@ -1,0 +1,154 @@
+{
+  "event": "杨胖杯",
+  "date": "2026-10-26",
+  "source_image_sha256": "e23d5f2a891d2ea5345ef0fd1a061da30423f2a2819daa3cbf742d4b56a59ea4",
+  "match": "yangpang/matches/2026-10-26_不知豆队VS爱康tv.json",
+  "rounds": 7,
+  "score_cells": 28,
+  "team_totals": [
+    {
+      "name": "不知豆队",
+      "total": 106
+    },
+    {
+      "name": "爱康tv",
+      "total": 98
+    }
+  ],
+  "update_policy": "在原均分榜上累计。未完成但本场分数为0的局仍计入场次。冲线率沿用第一名局数除以已参赛局数。",
+  "map_notes": {
+    "兰州": "按本地图库对应为兰舟听雪"
+  },
+  "updates": [
+    {
+      "name": "陈莫宇",
+      "previous": {
+        "total": 95,
+        "games": 9,
+        "first_place_count": 6
+      },
+      "added": {
+        "scores": [
+          11,
+          11,
+          11,
+          10,
+          11,
+          11,
+          11
+        ],
+        "total": 76,
+        "games": 7,
+        "first_place_count": 6
+      },
+      "current": {
+        "name": "陈莫宇",
+        "average": 10.69,
+        "rate": 75,
+        "total": 171,
+        "games": 16,
+        "rank": 1,
+        "first_place_count": 12
+      }
+    },
+    {
+      "name": "清梦",
+      "previous": {
+        "total": 44,
+        "games": 9,
+        "first_place_count": 0
+      },
+      "added": {
+        "scores": [
+          7,
+          0,
+          0,
+          4,
+          9,
+          8,
+          2
+        ],
+        "total": 30,
+        "games": 7,
+        "first_place_count": 0
+      },
+      "current": {
+        "name": "清梦",
+        "average": 4.63,
+        "rate": 0,
+        "total": 74,
+        "games": 16,
+        "rank": 10,
+        "first_place_count": 0
+      }
+    },
+    {
+      "name": "郑文康",
+      "previous": {
+        "total": 0,
+        "games": 0,
+        "first_place_count": 0
+      },
+      "added": {
+        "scores": [
+          7,
+          9,
+          7,
+          11,
+          9,
+          9,
+          9
+        ],
+        "total": 61,
+        "games": 7,
+        "first_place_count": 1
+      },
+      "current": {
+        "name": "郑文康",
+        "total": 61,
+        "games": 7,
+        "first_place_count": 1,
+        "average": 8.71,
+        "rate": 14.29,
+        "rank": 5
+      }
+    },
+    {
+      "name": "小爱莉",
+      "previous": {
+        "total": 0,
+        "games": 0,
+        "first_place_count": 0
+      },
+      "added": {
+        "scores": [
+          8,
+          5,
+          0,
+          6,
+          7,
+          10,
+          1
+        ],
+        "total": 37,
+        "games": 7,
+        "first_place_count": 0
+      },
+      "current": {
+        "name": "小爱莉",
+        "total": 37,
+        "games": 7,
+        "first_place_count": 0,
+        "average": 5.29,
+        "rate": 0,
+        "rank": 9
+      }
+    }
+  ],
+  "overall": {
+    "total": 779,
+    "player_rounds": 100,
+    "average": "7.79"
+  },
+  "verified": true
+}

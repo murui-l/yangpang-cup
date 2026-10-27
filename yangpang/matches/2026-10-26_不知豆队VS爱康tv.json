@@ -1,0 +1,29 @@
+{
+  "title": "2v2个人竞速",
+  "subtitle": "杨胖杯 · 七局战报",
+  "event": "杨胖杯",
+  "date": "2026-10-26",
+  "teams": [
+    {
+      "name": "不知豆队",
+      "logo": "../qqspeed-battle-report/assets/buzhidou-logo.png",
+      "total": 106,
+      "players": [
+        {"name": "陈莫宇", "source_name": "陈", "total": 76, "scores": [11, 11, 11, 10, 11, 11, 11]},
+        {"name": "清梦", "source_name": "梦", "total": 30, "scores": [7, 0, 0, 4, 9, 8, 2]}
+      ]
+    },
+    {
+      "name": "爱康tv",
+      "logo": "../qqspeed-battle-report/assets/aikang-tv-logo.png",
+      "total": 98,
+      "players": [
+        {"name": "郑文康", "source_name": "康", "total": 61, "scores": [7, 9, 7, 11, 9, 9, 9]},
+        {"name": "小爱莉", "source_name": "爱", "total": 37, "scores": [8, 5, 0, 6, 7, 10, 1]}
+      ]
+    }
+  ],
+  "rounds": ["夜游潇湘", "苏格兰场", "流觞曲水", "千户苗寨", "兰舟听雪", "疾风机场", "老街工地"],
+  "source_map_labels": ["夜游", "苏格兰场", "流水", "苗寨", "兰州", "机场", "工地"],
+  "map_notes": {"兰州": "按本地图库对应为兰舟听雪"}
+}

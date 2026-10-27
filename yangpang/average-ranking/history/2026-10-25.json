@@ -1,0 +1,75 @@
+{
+  "rows": [
+    {
+      "name": "陈莫宇",
+      "average": 10.56,
+      "rate": 66.67,
+      "total": 95,
+      "games": 9,
+      "rank": 1
+    },
+    {
+      "name": "林敏波",
+      "average": 10,
+      "rate": 55.56,
+      "total": 90,
+      "games": 9,
+      "rank": 2
+    },
+    {
+      "name": "张寒",
+      "average": 9.11,
+      "rate": 44.44,
+      "total": 82,
+      "games": 9,
+      "rank": 3
+    },
+    {
+      "name": "乐乐",
+      "average": 9.11,
+      "rate": 33.33,
+      "total": 82,
+      "games": 9,
+      "rank": 3
+    },
+    {
+      "name": "路障",
+      "average": 7.11,
+      "rate": 0,
+      "total": 64,
+      "games": 9,
+      "rank": 5
+    },
+    {
+      "name": "小岛",
+      "average": 6.89,
+      "rate": 0,
+      "total": 62,
+      "games": 9,
+      "rank": 6
+    },
+    {
+      "name": "牢喵",
+      "average": 6.22,
+      "rate": 0,
+      "total": 56,
+      "games": 9,
+      "rank": 7
+    },
+    {
+      "name": "清梦",
+      "average": 4.89,
+      "rate": 0,
+      "total": 44,
+      "games": 9,
+      "rank": 8
+    }
+  ],
+  "pending": [
+    "郑文康",
+    "爱丽",
+    "大胖",
+    "猴神"
+  ],
+  "overall": "7.99"
+}

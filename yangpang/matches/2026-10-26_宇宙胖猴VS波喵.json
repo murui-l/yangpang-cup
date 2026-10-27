@@ -1,0 +1,28 @@
+{
+  "title": "2v2个人竞速",
+  "subtitle": "杨胖杯 · 七局战报",
+  "event": "杨胖杯",
+  "date": "2026-10-26",
+  "teams": [
+    {
+      "name": "宇宙胖猴",
+      "logo": "../qqspeed-battle-report/assets/yuzhou-panghou-logo.png",
+      "total": 113,
+      "players": [
+        {"name": "大胖子", "source_name": "胖", "total": 65, "scores": [10, 8, 11, 11, 9, 7, 9]},
+        {"name": "暗号", "source_name": "猴", "total": 48, "scores": [9, 8, 8, 9, 0, 5, 9]}
+      ]
+    },
+    {
+      "name": "波喵",
+      "logo": "../qqspeed-battle-report/assets/bomiao-logo.png",
+      "total": 94,
+      "players": [
+        {"name": "沐瑞", "source_name": "波", "total": 70, "scores": [11, 11, 9, 6, 11, 11, 11]},
+        {"name": "喵帕斯", "source_name": "喵", "total": 24, "scores": [7, 5, 1, 4, 0, 1, 6]}
+      ]
+    }
+  ],
+  "rounds": ["踏雪寻春", "端午竞渡", "亚特兰蒂斯", "苏格兰场", "山海画境", "流觞曲水", "特洛伊环城"],
+  "source_map_labels": ["踏雪", "端午", "亚特", "苏", "山海", "流水", "特洛伊"]
+}
